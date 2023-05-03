@@ -1,9 +1,7 @@
 def dfact(n):
-    if n==1:
-     
-      return n
-    
-    return (n * fact(n-1))
+    if n==0:
+       return 1
+    else:
+       return (n * dfact(n-1))
 if "__name__" == "__main__":
-      
-    print(dfact(10)) 
+print(dfact(10)) 
